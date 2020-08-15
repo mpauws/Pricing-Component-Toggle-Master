@@ -6,8 +6,8 @@
       <!-- displays site properly based on user's device -->
 
       <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-
       <link rel="stylesheet" type="text/css" href="style.css" />
+      <script src="script.js" defer></script>
 
       <title>Frontend Mentor | [Challenge Name Here]</title>
 
@@ -16,18 +16,19 @@
    <body>
       <h1>Our Pricing</h1>
       <div class="toggle-menu-annual-monthly">
-         <span class="payment-term">Annually</span>
+         <span class="payment-term">Monthly</span>
          <label class="switch">
-            <input type="checkbox" />
+            <input type="checkbox" id="switch"/>
             <span class="slider round"></span>
          </label>
-         <span class="payment-term">Monthly</span>
+         <span class="payment-term">Annually</span>
       </div>
 
       <div class="pricing-columns-container">
          <div class="pricing-container" id="pricing-basic-container">
             <h3>Basic</h3>
-            <h4>&dollar;19.99 &dollar;199.99</h4>
+            <h4 class="monthly-pricing">&dollar;19.99</h4>
+            <h4 class="annual-pricing">&dollar;199.99</h4>
             <h5>500 GB Storage</h5>
             <h5>2 Users Allowed</h5>
             <h5>Send up to 3 GB</h5>
@@ -36,7 +37,8 @@
 
          <div class="pricing-container" id="pricing-professional-container">
             <h3>Professional</h3>
-            <h4>&dollar;24.99 &dollar;249.99</h4>
+            <h4 class="monthly-pricing">&dollar;24.99</h4>
+            <h4 class="annual-pricing">&dollar;249.99</h4>
             <h5>1 TB Storage</h5>
             <h5>5 Users Allowed</h5>
             <h5>Send up to 10 GB</h5>
@@ -45,7 +47,8 @@
 
          <div class="pricing-container" id="pricing-master-container">
             <h3>Master</h3>
-            <h4>&dollar;39.99 &dollar;399.99</h4>
+            <h4 class="monthly-pricing">&dollar;39.99</h4>
+            <h4 class="annual-pricing">&dollar;399.99</h4>
             <h5>2 TB Storage</h5>
             <h5>10 Users Allowed</h5>
             <h5>Send up to 20 GB</h5>

@@ -8,8 +8,7 @@ body {
   color: hsl(232, 13%, 33%);
   height: 100vh;
   background-color: hsl(240, 78%, 98%);
-  background-image: url("/pricing-component-with-toggle-master/images/bg-top.svg"),
-    url("/pricing-component-with-toggle-master/images/bg-bottom.svg");
+  background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
   background-position: right top, left bottom;
   background-repeat: no-repeat;
 }

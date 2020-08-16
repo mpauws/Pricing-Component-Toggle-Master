@@ -1,64 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-      <link rel="stylesheet" type="text/css" href="style.css" />
-      <script src="script.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script>
 
-      <title>Frontend Mentor | [Challenge Name Here]</title>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-   </head>
-   <body>
-      <h1>Our Pricing</h1>
-      <div class="toggle-menu-annual-monthly">
-         <span class="payment-term">Monthly</span>
-         <label class="switch">
-            <input type="checkbox" id="switch"/>
-            <span class="slider round"></span>
-         </label>
-         <span class="payment-term">Annually</span>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <h1>Our Pricing</h1>
+    <div class="toggle-menu-annual-monthly">
+      <span class="payment-term">Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="switch" />
+        <span class="slider round"></span>
+      </label>
+      <span class="payment-term">Annually</span>
+    </div>
+
+    <div class="pricing-columns-container">
+      <div class="pricing-container" id="pricing-basic-container">
+        <h3>Basic</h3>
+        <div class="pricing">
+          <h4 class="pricing-dollar-sign">&dollar;</h4>
+          <h4 class="monthly-pricing-number">19.99</h4>
+          <h4 class="annual-pricing-number">199.99</h4>
+        </div>
+        <div class="plan-specs">
+          <hr />
+          <h5>500 GB Storage</h5>
+          <hr />
+          <h5>2 Users Allowed</h5>
+          <hr />
+          <h5>Send up to 3 GB</h5>
+          <hr />
+        </div>
+        <a href="#"><button class="button-basic-master">Learn More</button></a>
       </div>
 
-      <div class="pricing-columns-container">
-         <div class="pricing-container" id="pricing-basic-container">
-            <h3>Basic</h3>
-            <h4 class="monthly-pricing">&dollar;19.99</h4>
-            <h4 class="annual-pricing">&dollar;199.99</h4>
-            <h5>500 GB Storage</h5>
-            <h5>2 Users Allowed</h5>
-            <h5>Send up to 3 GB</h5>
-            <button>Learn More</button>
-         </div>
-
-         <div class="pricing-container" id="pricing-professional-container">
-            <h3>Professional</h3>
-            <h4 class="monthly-pricing">&dollar;24.99</h4>
-            <h4 class="annual-pricing">&dollar;249.99</h4>
-            <h5>1 TB Storage</h5>
-            <h5>5 Users Allowed</h5>
-            <h5>Send up to 10 GB</h5>
-            <button>Learn More</button>
-         </div>
-
-         <div class="pricing-container" id="pricing-master-container">
-            <h3>Master</h3>
-            <h4 class="monthly-pricing">&dollar;39.99</h4>
-            <h4 class="annual-pricing">&dollar;399.99</h4>
-            <h5>2 TB Storage</h5>
-            <h5>10 Users Allowed</h5>
-            <h5>Send up to 20 GB</h5>
-            <button>Learn More</button>
-         </div>
+      <div class="pricing-container" id="pricing-professional-container">
+        <h3>Professional</h3>
+        <div class="pricing">
+          <h4 class="pricing-dollar-sign">&dollar;</h4>
+          <h4 class="monthly-pricing-number">24.99</h4>
+          <h4 class="annual-pricing-number">249.99</h4>
+        </div>
+        <div class="plan-specs">
+          <hr />
+          <h5>1 TB Storage</h5>
+          <hr />
+          <h5>5 Users Allowed</h5>
+          <hr />
+          <h5>Send up to 10 GB</h5>
+          <hr />
+        </div>
+        <a href="#"><button class="button-professional">Learn More</button></a>
       </div>
 
-      <div class="attribution">
-         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded
-         by <a href="#">Your Name Here</a>.
+      <div class="pricing-container" id="pricing-master-container">
+        <h3>Master</h3>
+        <div class="pricing">
+          <h4 class="pricing-dollar-sign">&dollar;</h4>
+          <h4 class="monthly-pricing-number">39.99</h4>
+          <h4 class="annual-pricing-number">399.99</h4>
+        </div>
+        <div class="plan-specs">
+          <hr />
+          <h5>2 TB Storage</h5>
+          <hr />
+          <h5>10 Users Allowed</h5>
+          <hr />
+          <h5>Send up to 20 GB</h5>
+          <hr />
+        </div>
+        <a href="#"><button class="button-basic-master">Learn More</button></a>
       </div>
-   </body>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Marco Pauws</a>.
+    </div>
+  </body>
 </html>
